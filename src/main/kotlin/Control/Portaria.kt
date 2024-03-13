@@ -1,7 +1,7 @@
 package Control
 
 import Business.ConvidadoBusiness
-import Entiny.Convite
+import Entiny.Convidado
 
 class Portaria {
 
@@ -13,7 +13,7 @@ class Portaria {
     private fun controle(): String {
         // aqui ponhamos o Console em uso
         val idade = Console.leituraInt("Qual a sua idade? ")
-        val convidado = Convite(idade = idade)
+        val convidado = Convidado(idade = idade)
 
         if (!convidadoBusiness.maiorDeIdade(convidado.idade)) {
           return "Negado. Menores não são permitidos!"

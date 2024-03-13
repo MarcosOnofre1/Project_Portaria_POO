@@ -1,6 +1,6 @@
 package Business
 
-import Entiny.Convite
+import Entiny.Convidado
 
 class ConvidadoBusiness {
 
@@ -8,7 +8,7 @@ class ConvidadoBusiness {
     fun tipoValido(tipo: String) = (tipo == "comum" || tipo == "premium" || tipo == "luxo")
 
     // Simplificamos a leitura do codigo usando o metodo When ao inves do if().
-    fun convidadoValido(convite: Convite): Boolean {
+    fun convidadoValido(convite: Convidado): Boolean {
 
         return when (convite.tipo) {
             "comum" -> {
