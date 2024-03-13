@@ -1,0 +1,4 @@
+package Entiny
+
+class Pessoa {
+}
